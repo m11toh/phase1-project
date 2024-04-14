@@ -1,0 +1,1 @@
+const scrollReveal = document.getElementById
