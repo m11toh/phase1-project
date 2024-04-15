@@ -1,0 +1,33 @@
+{
+    "Rooms":[
+{
+    "id": 1,
+    "Rooms Type":"Deluxe double room",
+    "image": "images/rooms.jpeg",
+    "Availabity": 5
+},
+{
+    "id": 2,
+    "Rooms Type":"Standard double room.",
+    "image": "images/standard double room .jpeg",
+    "Availabity": 6
+},
+{
+    "id": 3,
+    "Rooms Type":"Executive suite",
+    "image": "images/Executive Suite .jpeg",
+    "Availabity": 3
+},
+{
+    "id": 4,
+    "Rooms Type":"Presidential suite",
+    "image": "images/presidential suite.jpeg",
+    "Availabity": 1
+},
+{   "id": 5,
+    "Rooms Type":"Single room.",
+    "image": "images/Singleroom.jpeg",
+    "Availabity": 8
+}
+    ]
+}

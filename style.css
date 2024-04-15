@@ -12,6 +12,70 @@
     box-shadow: 0 3px 10px burlywood;
 }
 
+.contact_btn{
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: gray;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.contact_btn:hover{
+    background-color:greenyellow ;
+    border-radius: 10%;
+}
+
+/* .nav_header{
+    padding-block: 5rem;
+    background-image: linear-gradient(#5e3434)
+    url(./images/staff.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+
+.nav_bar{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.nav_menu_btn{
+    font-size: 1.8rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.nav_links{
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    transform: translate(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+.nav_links.open{
+    transform: translateY(0);
+
+}
+
+.nav_links a {
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.nav_links a:hover {
+    color: var(--primary-color);
+}
+
 
 
 body{
