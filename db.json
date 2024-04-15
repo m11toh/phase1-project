@@ -2,32 +2,38 @@
     "Rooms":[
 {
     "id": 1,
-    "Rooms Type":"Deluxe double room",
+    "Type":"Deluxe double room",
     "image": "images/rooms.jpeg",
-    "Availabity": 5
+    "Availabity": 5,
+    "Price": "$100/night"
 },
 {
     "id": 2,
-    "Rooms Type":"Standard double room.",
+    "Type":"Standard double room.",
     "image": "images/standard double room .jpeg",
-    "Availabity": 6
+    "Availabity": 6,
+    "Price": "$80/night"
+
 },
 {
     "id": 3,
-    "Rooms Type":"Executive suite",
+    "Type":"Executive suite",
     "image": "images/Executive Suite .jpeg",
-    "Availabity": 3
+    "Availabity": 3,
+    "Price": "$300/night"
 },
 {
     "id": 4,
-    "Rooms Type":"Presidential suite",
+    "Type":"Presidential suite",
     "image": "images/presidential suite.jpeg",
-    "Availabity": 1
+    "Availabity": 1,
+    "Price": "$399/night"
 },
 {   "id": 5,
-    "Rooms Type":"Single room.",
+    "Type":"Single room.",
     "image": "images/Singleroom.jpeg",
-    "Availabity": 8
+    "Availabity": 8,
+    "Price": "$50/night"
 }
     ]
 }
