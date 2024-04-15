@@ -37,7 +37,7 @@ DisplayRooms(Rooms);
 
 
 
-fetch("http://localhost:3000/Rooms")
+fetch("https://project-server-si5m.onrender.com/Rooms")
 .then(res => res.json())
 .then(Rooms => {
   console.log(Rooms);
