@@ -12,8 +12,9 @@ menuBtn.addEventListener("click", (e) => {
   );
 });
 
-document.addEventListener('DOMContentLoaded', async(event)=>{
-  DisplayRooms(Rooms)
+document.addEventListener('DOMContentLoaded',(event)=>{
+  
+  
 }) 
 
 function DisplayRooms(Rooms){
@@ -33,14 +34,22 @@ function DisplayRooms(Rooms){
   roomcontainer.innerHTML = RoomCard
 }
 
-DisplayRooms(Rooms);
+DisplayRooms();
 
 
 
-fetch("https://project-server-si5m.onrender.com/Rooms")
-.then(res => res.json())
-.then(Rooms => {
-  console.log(Rooms);
-})
+  fetch("https://project-server-si5m.onrender.com/Rooms",{
+    method: "GET",
+    headers:{
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    }
+  })
+  .then(res => res.json())
+  .then(Rooms => {
+    console.log(Rooms)
+  });
+
+
 
 
