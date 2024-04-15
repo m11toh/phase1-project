@@ -12,29 +12,35 @@ menuBtn.addEventListener("click", (e) => {
   );
 });
 
+document.addEventListener('DOMContentLoaded', async(event)=>{
+  DisplayRooms(Rooms)
+}) 
 
-// document.addEventListener('DOMContentloaded',(event) => {
-//   getRooms();
- 
-// })
-
-// function getRooms(){
-//   const rommTypes = document.getElementById('rooms')
-//   fetch("http://localhost:3000/Rooms").then(response => response.json())
-//   .then((data) => {
-//        data.forEach(rooms =>{
-//            const list = document.createElement('li')
-//            list.innerText = Rooms.Type;
-
-//            list.addEventListener('click',()=>{
-//                displayinfo(rooms)
-//            })
-
-//            movielist.appendChild(list);
-
-//            console.log(Rooms.Type)
-//        })
-//   }
-  // )
+function DisplayRooms(Rooms){
   
-       
+  const RoomCard = Rooms.map((Rooms)=>{
+    return`
+        <img src="${Rooms.image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${Rooms.Type}</h5>
+                  <p class="card-text">${Rooms.Availabity}</p>
+                  <p class="card-text"><small class="text-body-secondary">${Rooms.Price}</small></p>
+                </div>
+    `
+  }) 
+
+  const roomcontainer = document.getElementById("roomInfo")
+  roomcontainer.innerHTML = RoomCard
+}
+
+DisplayRooms(Rooms);
+
+
+
+fetch("http://localhost:3000/Rooms")
+.then(res => res.json())
+.then(Rooms => {
+  console.log(Rooms);
+})
+
+
