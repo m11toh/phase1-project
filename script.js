@@ -28,7 +28,7 @@ menuBtn.addEventListener("click", (e) => {
 
 
 function getRoom(){
-  fetch("http://localhost:3000/Rooms")
+  fetch("https://project-server-si5m.onrender.com/Rooms")
   .then(res => res.json())
   .then(RoomsData => RoomsData.forEach(Rooms => oneRoom(Rooms)))
 
