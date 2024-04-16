@@ -7,6 +7,10 @@
 ## Description
 This project is a Hotel Management System designed to streamline the overview of a hotel, including managing room bookings, guest information, staff , and available rooms.
 
+Upon visiting our website, users are greeted with a visually appealing view that showcases the elegance and comfort of Hotel Navada. The homepage provides quick access to essential sections such as room bookings, amenities, room type options, and special offers.
+
+Our website offers a seamless booking experience, allowing users to browse through different room types, check availability, and make reservations effortlessly. We prioritize user convenience and security in the booking process.
+
 ## Installation
 You use git clone to be able to download the documents in the GitHub
 
