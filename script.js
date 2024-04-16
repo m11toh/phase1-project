@@ -12,44 +12,31 @@ menuBtn.addEventListener("click", (e) => {
   );
 });
 
-document.addEventListener('DOMContentLoaded',(event)=>{
-  
-  
-}) 
+ function oneRoom(Rooms){
+  let card = document.createElement('li')
+  card.className = 'card mb-3'
+  card.innerHTML =`
+      <img src="${Rooms.image}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${Rooms.Type}</h5>
+        <p class="card-text">${Rooms.Availabity}</p>
+        <p class="card-text"><small class="text-body-secondary">${Rooms.Price}</small></p>
+      </div>
+  `
+  document.querySelector('#roomInfo').appendChild(card)
+ }
 
-function DisplayRooms(Rooms){
-  
-  const RoomCard = Rooms.map((Rooms)=>{
-    return`
-        <img src="${Rooms.image}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">${Rooms.Type}</h5>
-                  <p class="card-text">${Rooms.Availabity}</p>
-                  <p class="card-text"><small class="text-body-secondary">${Rooms.Price}</small></p>
-                </div>
-    `
-  }) 
 
-  const roomcontainer = document.getElementById("roomInfo")
-  roomcontainer.innerHTML = RoomCard
+function getRoom(){
+  fetch("http://localhost:3000/Rooms")
+  .then(res => res.json())
+  .then(RoomsData => RoomsData.forEach(Rooms => oneRoom(Rooms)))
+
 }
 
-DisplayRooms();
+function initialize(){
+  getRoom()
+}
 
-
-
-  fetch("https://project-server-si5m.onrender.com/Rooms",{
-    method: "GET",
-    headers:{
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    }
-  })
-  .then(res => res.json())
-  .then(Rooms => {
-    console.log(Rooms)
-  });
-
-
-
+initialize()
 

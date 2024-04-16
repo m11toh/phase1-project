@@ -5,7 +5,7 @@
 #### By *Martin Maina*
 
 ## Description
-This project is a Hotel Management System designed to streamline the overview of a hotel, including managing room bookings, guest information, staff , and avilable rooms.
+This project is a Hotel Management System designed to streamline the overview of a hotel, including managing room bookings, guest information, staff , and available rooms.
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub
